@@ -202,7 +202,7 @@ class Platformer extends Phaser.Scene {
         this.maxJumps = 0;
         this.wasOnGround = false;
         this.movementdisabled = true;
-
+        this.bgm.stop();
         // show level complete message
         const completeText = this.add.text(
             this.cameras.main.centerX,
